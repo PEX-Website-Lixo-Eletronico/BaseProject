@@ -3,139 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapeamento do Lixo Eletrônico - IFTO</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+    <title>Descarte Consciente</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="menu-dialog">
-                <input type="checkbox" id="menu-checkbox">
-                <label for="menu-checkbox" class="menu-icon">
-                    <span class="nav-bar"></span>
-                    <span class="nav-bar"></span>
-                    <span class="nav-bar"></span>
-                </label>
-                <div class="dialog">
-                    <div class="dialog-header">
-                        <h3>Menu</h3>
-                        <label for="menu-checkbox" class="close-button">&times;</label>
-                    </div>
-                    <div class="dialog-body">
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">Sobre</a></li>
-                            <li><a href="#team">Equipe</a></li>
-                            <li><a href="#map">Mapa de Lixo Eletrônico</a></li>
-                            <li><a href="#stats">Estatísticas</a></li>
-                            <li><a href="#contact">Contato</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="container">
+            <div class="logo">
+                <h1>LOGO</h1>
             </div>
-            <button class="theme-toggle" aria-label="Toggle dark mode">
-                <i class="fas fa-adjust"></i>
-            </button>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#">Informações</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Coleta</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="home">
-            <div class="hero">
-                <h1>Bem-vindo ao Mapeamento do Lixo Eletrônico</h1>
-                <p>O mapeamento do lixo eletrônico é uma iniciativa importante para promover práticas sustentáveis e conscientizar sobre os impactos ambientais do descarte inadequado de equipamentos eletrônicos.</p>
-                <button onclick="window.location.href='#map'">Explorar o Mapa</button>
-            </div>
-        </section>
+    <section class="hero">
+        <div class="container">
+            <h2>DESCARTE</h2>
+            <h1>Seus equipamentos</h1>
+            <h1>de forma conciente</h1>
+            <h1>e segura</h1>
+            <img src="https://www.ifto.edu.br/images/institucional/logo-ifto.png" alt="Logo IFTO" class="logo-ifto">
+            <a href="#" class="btn">Saiba mais</a>
+        </div>
+    </section>
 
-        <section id="about">
-            <h2>Sobre o Projeto</h2>
-            <div class="project-info">
-                <div class="info-block">
-                    <h3>Objetivo</h3>
-                    <p>O objetivo do nosso projeto é criar um sistema eficiente de coleta e reciclagem de lixo eletrônico, reduzindo o impacto ambiental e promovendo uma cultura de sustentabilidade.</p>
+    <section class="como-funciona">
+        <div class="container">
+            <h2>Como Funciona o Descarte</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="number">1º</div>
+                    <h3>Passo 01</h3>
+                    <p>Para entrar em contato com os responsáveis pela coleta de lixo eletrônico, você pode visitar nosso site e acessar a seção de contato.</p>
                 </div>
-                <div class="info-block">
-                    <h3>Parceiros</h3>
-                    <ul>
-                        <li>Instituto Federal de Educação, Ciência e Tecnologia do Tocantins</li>
-                        <li>Prefeitura Municipal</li>
-                        <li>Organizações Não-Governamentais</li>
-                    </ul>
+                <div class="step">
+                    <div class="number">2º</div>
+                    <h3>Passo 02</h3>
+                    <p>Para entrar em contato com os responsáveis pela coleta de lixo eletrônico, você pode visitar nosso site e acessar a seção de contato.</p>
+                 ```html
+                </div>
+                <div class="step">
+                    <div class="number">3º</div>
+                    <h3>Passo 03</h3>
+                    <p>Após o contato, agendaremos uma data para a coleta do seu equipamento.</p>
+                </div>
+                <div class="step">
+                    <div class="number">4º</div>
+                    <h3>Passo 04</h3>
+                    <p>Na data agendada, nossos profissionais irão até você para realizar a coleta.</p>
                 </div>
             </div>
-        </section>
-
-        <section id="team">
-            <h2>Nossa Equipe</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="team-member-1.jpg" alt="Membro 1">
-                    <h3>Nome do Membro 1</h3>
-                    <p>Função do Membro 1</p>
-                </div>
-                <div class="team-member">
-                    <img src="team-member-2.jpg" alt="Membro 2">
-                    <h3>Nome do Membro 2</h3>
-                    <p>Função do Membro 2</p>
-                </div>
-                <!-- Adicione mais membros aqui -->
-            </div>
-        </section>
-
-        <section id="map">
-            <h2>Mapa de Lixo Eletrônico</h2>
-            <div id="map-container">
-                <!-- O mapa será renderizado aqui usando JavaScript -->
-            </div>
-        </section>
-
-        <section id="stats">
-            <h2>Estatísticas do Lixo Eletrônico</h2>
-            <div class="stat-box">
-                <div class="stat-item">
-                    <h3>Quantidade de Lixo Eletrônico</h3>
-                    <p>10.000 toneladas</p>
-                </div>
-                <div class="stat-item">
-                    <h3>Impacto Ambiental</h3>
-                    <p>80% de redução de emissões de CO2</p>
-                </div>
-                <!-- Adicione mais estatísticas aqui -->
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer>
-        <div class="footer-grid">
-            <div class="footer-column">
-                <h3>Informações Úteis</h3>
-                <ul>
-                    <li><a href="#">Política de Privacidade</a></li>
-                    <li><a href="#">Termos de Uso</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Redes Sociais</h3>
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Contato</h3>
-                <address>
-                    Instituto Federal de Educação, Ciência e Tecnologia<br>
-                    Rua dos Trabalhadores, 123<br>
-                    Araguaína, TO 88015-001<br>
-                    Tel: (63) 3234-5678<br>
-                    Email: info@mapeamentodelixoeletronico.if.edu.br
-                </address>
-            </div>
+        <div class="container">
+            <p>&copy; 2023 Descarte Consciente. Todos os direitos reservados.</p>
         </div>
     </footer>
 
