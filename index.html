@@ -1,73 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descarte Consciente</title>
+    <title>Projeto de Coleta de Lixo Eletrônico</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <h1>LOGO</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Informações</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Coleta</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div class="logo">LOGO</div>
+        <nav>
+            <ul>
+                <li><a href="#">INFORMAÇÕES</a></li>
+                <li><a href="#">SOBRE</a></li>
+                <li><a href="#">SERVIÇOS</a></li>
+                <li><a href="#">COLETA</a></li>
+                <li><a href="#">CONTATO</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2>DESCARTE</h2>
-            <h1>Seus equipamentos</h1>
-            <h1>de forma conciente</h1>
-            <h1>e segura</h1>
-            <img src="https://www.ifto.edu.br/images/institucional/logo-ifto.png" alt="Logo IFTO" class="logo-ifto">
-            <a href="#" class="btn">Saiba mais</a>
+    <section class="banner">
+        <div class="text-banner">
+            <h1>DESCARTE seus equipamentos <br> de forma consciente e segura</h1>
+            <p><img src="logo_if.png" alt="Instituto Federal Campus Araguaina"></p>
+        </div>
+        <div class="image-banner">
+            <img src="trash_image.png" alt="Equipamentos eletrônicos para descarte">
         </div>
     </section>
 
-    <section class="como-funciona">
-        <div class="container">
-            <h2>Como Funciona o Descarte</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="number">1º</div>
-                    <h3>Passo 01</h3>
-                    <p>Para entrar em contato com os responsáveis pela coleta de lixo eletrônico, você pode visitar nosso site e acessar a seção de contato.</p>
-                </div>
-                <div class="step">
-                    <div class="number">2º</div>
-                    <h3>Passo 02</h3>
-                    <p>Para entrar em contato com os responsáveis pela coleta de lixo eletrônico, você pode visitar nosso site e acessar a seção de contato.</p>
-                 ```html
-                </div>
-                <div class="step">
-                    <div class="number">3º</div>
-                    <h3>Passo 03</h3>
-                    <p>Após o contato, agendaremos uma data para a coleta do seu equipamento.</p>
-                </div>
-                <div class="step">
-                    <div class="number">4º</div>
-                    <h3>Passo 04</h3>
-                    <p>Na data agendada, nossos profissionais irão até você para realizar a coleta.</p>
-                </div>
-            </div>
+    <section class="how-it-works">
+        <h2>Como Funciona o Descarte</h2>
+        <div class="steps">
+            <div class="step">Passo 01<br>Informação sobre o passo 01.</div>
+            <div class="step">Passo 02<br>Informação sobre o passo 02.</div>
+            <div class="step">Passo 03<br>Informação sobre o passo 03.</div>
+            <div class="step">Passo 04<br>Informação sobre o passo 04.</div>
+            <div class="step">Passo 05<br>Informação sobre o passo 05.</div>
+        </div>
+    </section>
+
+    <section class="location">
+        <h2>Encontre o ponto de descarte mais perto de você!</h2>
+        <p>Fazemos coleta de lixo eletrônico em toda região metropolitana de Araguaína-TO</p>
+        <button>Agende sua coleta</button>
+        <div id="map"></div>
+    </section>
+
+    <section class="faq">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq-item">
+            <button onclick="toggleFaq(this)">Dúvida 01?</button>
+            <p class="answer">Resposta para a dúvida 01.</p>
+        </div>
+        <div class="faq-item">
+            <button onclick="toggleFaq(this)">Dúvida 02?</button>
+            <p class="answer">Resposta para a dúvida 02.</p>
+        </div>
+        <!-- Repita para outras perguntas -->
+    </section>
+
+    <section class="supporters">
+        <h2>Apoiadores</h2>
+        <div class="supporters-container">
+            <div class="supporter"></div>
+            <div class="supporter"></div>
+            <div class="supporter"></div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2023 Descarte Consciente. Todos os direitos reservados.</p>
+        <div class="footer-content">
+            <p>Nome do Projeto © 2024</p>
+            <div class="links">
+                <a href="#">SOBRE</a> | <a href="#">SERVIÇOS</a> | <a href="#">COLETA</a> | <a href="#">COLABORADORES</a>
+            </div>
+            <div class="contact">
+                <p>Contato: <a href="mailto:email@exemplo.com">email@exemplo.com</a></p>
+                <p>Telefone: (63) 99111-7095</p>
+            </div>
+            <div class="social">
+                <p>Redes sociais</p>
+            </div>
         </div>
     </footer>
 
