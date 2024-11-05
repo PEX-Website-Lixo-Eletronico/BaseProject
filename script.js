@@ -1,50 +1,84 @@
-// script.js
-
-document.addEventListener('DOMContentLoaded', () => {
-    const mapContainer = document.getElementById('map-container');
-
-    // Simulating a map loading function
-    function loadMap() {
-        const mapHtml = `
-            <iframe width="100%" height="400px" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3000!2d-43.2312098!3d-22.9063099!2m3!1f0!2f0!3f0!3m2!1j1!2j1!4f13.1!3m3!1m2!1s0x94ccdbb7d3415f%3A0x5f7d3b5f0a4d5f8f!2sInstituto+Federal+de+Florian%C3%B3polis!5e0!3m2!1spt-BR!2sbr!4v1667448133050!6m1!1bI" frameborder="0" allowfullscreen></iframe>
-        `;
-        mapContainer.innerHTML = mapHtml;
-    }
-
-    // Simulando botão de click
-    document.querySelector('#load-map').addEventListener('click', loadMap);
-
-    // Exemplo de interação
-    const statItems = document.querySelectorAll('.stat-item');
-    statItems.forEach(item => {
-        item.addEventListener('mouseover', () => {
-            item.style.backgroundColor = '#e9ecef';
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            alert('Você clicou no botão Saiba mais!');
         });
-        item.addEventListener('mouseout', () => {
-            item.style.backgroundColor = '#fff';
-        });
-    });
-
-    // Exemplo de criação do chart usando Chart.js
-    const ctx = document.getElementById('myChart').getContext('2d');
-    new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
-            datasets: [{
-                label: 'Quantidade de Lixo Eletrônico Reciclado',
-                data: [150, 120, 180, 190, 160, 170, 175, 185, 195, 200, 205, 210],
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
     });
 });
+``` ```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarte Consciente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>LOGO</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Informações</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Coleta</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>DESCARTE</h2>
+            <h1>Seus equipamentos</h1>
+            <h1>de forma conciente</h1>
+            <h1>e segura</h1>
+            <img src="https://www.ifto.edu.br/images/institucional/logo-ifto.png" alt="Logo IFTO" class="logo-ifto">
+            <a href="#" class="btn">Saiba mais</a>
+        </div>
+    </section>
+
+    <section class="como-funciona">
+        <div class="container">
+            <h2>Como Funciona o Descarte</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="number">1º</div>
+                    <h3>Passo 01</h3>
+                    <p>Para entrar em contato com os responsáveis pela coleta de lixo eletrônico, você pode visitar nosso site e acessar a seção de contato.</p>
+                </div>
+                <div class="step">
+                    <div class="number">2º</div>
+                    <h3>Passo 02</h3>
+                    <p>Após o contato, agendaremos uma data para a coleta do seu equipamento.</p>
+                </div>
+                <div class="step">
+                    <div class="number">3º</div>
+                    <h3>Passo 03</h3>
+                    <p>Na data agendada, nossos profissionais irão até você para realizar a coleta.</p>
+                </div>
+                <div class="step">
+                    <div class="number">4º</div>
+                    <h3>Passo 04</h3>
+                    <p>Após a coleta, você receberá um comprovante de descarte seguro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Descarte Consciente. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
